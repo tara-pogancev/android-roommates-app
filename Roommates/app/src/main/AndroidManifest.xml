@@ -29,15 +29,6 @@
             android:name=".activity.Messages"
             android:exported="false" />
         <activity
-            android:name=".activity.RoommatesWithApartmentsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.ApartmentsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.RoommatesActivity"
-            android:exported="false" />
-        <activity
             android:name=".activity.MyProfile"
             android:exported="false" />
         <activity
