@@ -3,11 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.RoommatesFragment">
+    tools:context=".fragment.roommates.RoommatesFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:src="@drawable/white_gradient"
+            android:translationZ="5dp"
+            />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/layout_recyclerView"

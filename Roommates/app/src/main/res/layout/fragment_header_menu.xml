@@ -61,13 +61,13 @@
 
                 <ImageButton
                     android:id="@+id/button_settings"
+                    style="@style/Widget.AppCompat.ImageButton.Transparent"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_centerVertical="true"
                     android:layout_alignParentEnd="true"
-                    android:src="@drawable/settings"
+                    android:layout_centerVertical="true"
                     android:scaleType="fitCenter"
-                    style="@style/Widget.AppCompat.ImageButton.Transparent"
+                    android:src="@drawable/settings"
                     app:tint="@color/white" />
 
             </RelativeLayout>

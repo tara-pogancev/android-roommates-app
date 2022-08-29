@@ -7,14 +7,13 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
-import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
+import com.tarapogancev.roommates.MainPagerAdapter;
 import com.tarapogancev.roommates.R;
-import com.tarapogancev.roommates.fragment.ApartmentsFragment;
-import com.tarapogancev.roommates.fragment.RoommatesFragment;
+import com.tarapogancev.roommates.fragment.apartments.ApartmentsFragment;
+import com.tarapogancev.roommates.fragment.roommates.RoommatesFragment;
 
 import java.util.ArrayList;
 import java.util.List;

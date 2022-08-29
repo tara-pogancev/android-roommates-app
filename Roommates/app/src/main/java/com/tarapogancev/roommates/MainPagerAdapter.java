@@ -1,4 +1,4 @@
-package com.tarapogancev.roommates.activity;
+package com.tarapogancev.roommates;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

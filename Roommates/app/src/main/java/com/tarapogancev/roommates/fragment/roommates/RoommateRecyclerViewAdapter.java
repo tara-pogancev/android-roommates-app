@@ -1,7 +1,6 @@
-package com.tarapogancev.roommates.activity;
+package com.tarapogancev.roommates.fragment.roommates;
 
 import android.content.Context;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,12 +11,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.tarapogancev.roommates.R;
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
+public class RoommateRecyclerViewAdapter extends RecyclerView.Adapter<RoommateRecyclerViewAdapter.ViewHolder> {
 
     String[] names;
     Context context;
 
-    public RecyclerViewAdapter(Context cotnext, String[] names) {
+    public RoommateRecyclerViewAdapter(Context cotnext, String[] names) {
         this.context = cotnext;
         this.names = names;
     }
@@ -32,7 +31,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.name.setText(names[position]);
+        holder.name.setText(names[position] + ", 28");
     }
 
     @Override
@@ -46,7 +45,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            name = itemView.findViewById(R.id.text_name);
+            name = itemView.findViewById(R.id.text_nameAndAge);
         }
     }
 

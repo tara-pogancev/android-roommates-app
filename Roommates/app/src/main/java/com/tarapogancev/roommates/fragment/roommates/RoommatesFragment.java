@@ -1,4 +1,4 @@
-package com.tarapogancev.roommates.fragment;
+package com.tarapogancev.roommates.fragment.roommates;
 
 import android.os.Bundle;
 
@@ -13,7 +13,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.tarapogancev.roommates.R;
-import com.tarapogancev.roommates.activity.RecyclerViewAdapter;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,6 +26,9 @@ public class RoommatesFragment extends Fragment {
             "John Doe 2",
             "John Doe 3",
             "John Doe 4",
+            "John Doe 5",
+            "John Doe 6",
+            "John Doe 7",
     };
     RecyclerView recyclerView;
 
@@ -60,7 +62,7 @@ public class RoommatesFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         recyclerView = getView().findViewById(R.id.layout_recyclerView);
-        RecyclerViewAdapter adapter = new RecyclerViewAdapter(this.getContext(), names);
+        RoommateRecyclerViewAdapter adapter = new RoommateRecyclerViewAdapter(this.getContext(), names);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));
     }

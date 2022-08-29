@@ -1,4 +1,4 @@
-package com.tarapogancev.roommates.fragment;
+package com.tarapogancev.roommates.fragment.apartments;
 
 import android.os.Bundle;
 
